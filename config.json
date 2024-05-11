@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Dummy Project",
+	"namespace": "dummy",
+	"authors": [
+		"gon."
+	],
+	"targetVersion": "1.20.60",
+	"description": "Test Project ",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Dummy Project"
+				}
+			]
+		]
+	}
+}
